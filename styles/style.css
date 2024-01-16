@@ -46,7 +46,7 @@ nav ul li a:hover {
     text-align: center;
     width: 100%;
     position: absolute;
-    top: 60px; /* Adjust as needed to avoid overlapping with other elements */
+    top: 60px; 
     left: 0;
     background-color: #f4f4f4;
     align-items: center;
@@ -285,21 +285,21 @@ p {
 }
 
 .pic {
-  width: 100%; /* Make the image responsive */
-  max-width: 60px; /* Set a maximum width if needed */
+  width: 100%; 
+  max-width: 60px; 
   height: auto;
   display: block;
-  margin: 0 10px; /* Center the image */
+  margin: 0 10px; 
 }
 
 @media (max-width: 600px) {
   .choose > p {
-    padding: 10px 100px; /* Adjust padding for larger screens */
+    padding: 10px 100px; 
   }
 
   .bb,
   .bbb {
-    margin: 30px 0; /* Adjust margin for larger screens */
+    margin: 30px 0; 
   }
 
   .choose > div {
@@ -344,7 +344,7 @@ p {
 
 @media (max-width: 600px) {
     .dd > p {
-      padding: 10px 150px; /* Adjust padding for larger screens */
+      padding: 10px 150px; 
     }
   
     .peep {
@@ -452,7 +452,7 @@ p {
     }
   
     .orange-box {
-      transform: translate(-50%, -50%) rotate(-40deg); /* Adjusted transform values */
+      transform: translate(-50%, -50%) rotate(-40deg); 
     }}
 
 /* footer section styles / */
