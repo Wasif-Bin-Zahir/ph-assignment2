@@ -2,7 +2,6 @@
 
 * {
   font-family: "Mulish";
-  
 }
 
 /* nav styles */
@@ -36,49 +35,52 @@ nav ul li a:hover {
   color: #ff5400;
 }
 
-.hamburger{
-    display: none;
+.hamburger {
+  display: none;
 }
 
 @media (max-width: 600px) {
-   
-  
-    nav ul {
-      display: none;
-      flex-direction: column;
-      text-align: center;
-      width: 100%;
-      position: absolute;
-      top: 60px; /* Adjust as needed to avoid overlapping with other elements */
-      left: 0;
-      background-color: #f4f4f4;
-      align-items: center;
-    }
-  
-    nav ul.show {
-      display: flex;
-    }
-  
-    nav ul li {
-      margin: 10px 0;
-    }
-  
-    .hamburger {
-      display: block;
-      cursor: pointer;
-      margin-top: 20px;
-      margin-left: 140px;
-  
-    }
+  nav ul {
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 60px; /* Adjust as needed to avoid overlapping with other elements */
+    left: 0;
+    background-color: #f4f4f4;
+    align-items: center;
   }
 
+  nav ul.show {
+    display: flex;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 140px;
+  }
+}
+
 /* Explore section */
+
+.buba {
+  padding: 10px 20px;
+  border-radius: 5px;
+  max-width: 100px;
+}
 
 .explore {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  max-width: 600px;
+  max-width: 800px;
   padding: 100px;
   border-radius: 10px;
 
@@ -100,7 +102,7 @@ nav ul li a:hover {
 
 .explore-find ul {
   display: flex;
-  padding: 30px;
+  padding: 20px;
   justify-content: center;
   background: linear-gradient(
     rgba(185, 183, 183, 0.5),
@@ -114,6 +116,17 @@ nav ul li a:hover {
   padding: 10px;
 }
 
+@media (max-width: 600px) {
+  .explore-find ul {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .explore h1 {
+    font-size: 1.5rem;
+  }
+}
+
 /* Popular Section Styles */
 
 .btn {
@@ -124,6 +137,7 @@ nav ul li a:hover {
   padding: 10px 20px;
   border: none;
   border-radius: 10px;
+  text-align: center;
 }
 
 .container {
@@ -171,6 +185,7 @@ img {
   padding: 20px;
   border-radius: 10px;
   overflow: hidden;
+  box-sizing: border-box;
 }
 
 h2 {
@@ -192,12 +207,12 @@ p {
   flex: 1;
   position: relative;
   color: white;
-  height: 200px;
   margin: 10px;
 }
 
 .image-container img {
-  width: 100%;
+  max-width: 100%;
+  height: auto;
   border-radius: 10px;
   display: block;
 }
@@ -220,34 +235,70 @@ p {
 
 /* why Choose us section  */
 
+.bb h5,
+.bbb h5 {
+  margin-right: 320px;
+}
+
 .choose {
   margin: 10px;
   align-items: center;
+  text-align: center;
 }
 
 .choose > p {
   padding: 10px 300px;
+  text-align: center;
 }
 
 .choose h3 {
   text-align: center;
 }
 
-.bb {
-  background-color: antiquewhite;
+.b {
+  background-color: rgb(247, 248, 243);
   margin: 30px;
   padding: 10px 10px 5px 10px;
   border-radius: 5px;
+  border: 1px solid yellow;
 }
-.bbb {
-  background-color: antiquewhite;
-  margin: 30px 400px;
+.bb {
+  background-color: rgb(247, 248, 251);
+  margin: 30px;
   padding: 10px 10px 5px 10px;
   border-radius: 5px;
+  border: 1px solid rgb(215, 215, 244);
+}
+.bbb {
+  background-color: rgb(248, 235, 237);
+  margin: 30px 300px;
+  padding: 10px 10px 5px 10px;
+  border-radius: 5px;
+  border: 1px solid rgb(253, 219, 219);
 }
 
 .pic {
-  width: 5%;
+  width: 100%; /* Make the image responsive */
+  max-width: 60px; /* Set a maximum width if needed */
+  height: auto;
+  display: block;
+  margin: 0 10px; /* Center the image */
+}
+
+@media (max-width: 600px) {
+  .choose > p {
+    padding: 10px 100px; /* Adjust padding for larger screens */
+  }
+
+  .bb,
+  .bbb {
+    margin: 30px 0; /* Adjust margin for larger screens */
+  }
+
+  .choose > div {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 /* Deals & Discounts section style */
@@ -358,63 +409,62 @@ p {
   margin: 0;
 }
 
-
 /* footer section styles / */
 
 footer {
-    background-color: #f4f4f4;
-    text-align: center;
-    padding: 20px;
-    margin-top: 40px;
+  background-color: #f4f4f4;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
 }
 
 ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 li {
-    display: inline-block;
-    vertical-align: middle;
-    margin: 10px;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 10px;
 }
 
 img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
 h5 {
-    margin: 10px 0;
+  margin: 10px 0;
 }
 
 p {
-    margin: 10px 0;
+  margin: 10px 0;
 }
 
 hr {
-    width: 50%;
-    margin: 20px auto;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+  width: 50%;
+  margin: 20px auto;
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .social-icons {
-    text-align: center;
+  text-align: center;
 }
 
 .social-icons a {
-    display: inline-block;
-    margin: 0 10px;
+  display: inline-block;
+  margin: 0 10px;
 }
 
 .copyright {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
-footer>ul{
-    display: flex;
-    flex-direction: column;
+footer > ul {
+  display: flex;
+  flex-direction: column;
 }
